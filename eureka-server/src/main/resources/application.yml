@@ -1,20 +1,32 @@
 
 #eureka是一个高可用的组件，它没有后端缓存，每一个实例注册之后需要向注册中心发送心跳（因此可以在内存中完成），
 #在默认情况下erureka server也是一个eureka client ,必须要指定一个 server
-server:
-  port: 8761
+#server:
+#  port: 8761
 
 
 ##通过eureka.client.registerWithEureka：false和fetchRegistry：false来表明自己是一个eureka server.
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
-spring:
-  application:
-    name: eureka-server
+#eureka:
+#  instance:
+#    hostname: localhost
+#  client:
+#    registerWithEureka: false
+#    fetchRegistry: false
+#    serviceUrl:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#
+#spring:
+#  application:
+#    name: eureka-server
+
+
+
+
+##222222222222222
+#高可用的服务注册中心(Finchley版本)
+#java -jar eureka-server-0.0.1-SNAPSHOT.jar - -spring.profiles.active=peer2
+#java -jar eureka-server-0.0.1-SNAPSHOT.jar - -spring.profiles.active=peer1
+#java -jar service-hi-0.0.1-SNAPSHOT.jar
+ #
+ #访问：localhost:8761,

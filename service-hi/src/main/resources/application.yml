@@ -8,8 +8,11 @@ server:
 spring:
   application:
     name: service-hi
-
+##http://localhost:8761/eureka/
+##高可用配置http://peer1:8761/eureka/
+##改hosts文件：127.0.0.1 peer1
+  #127.0.0.1 peer2
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://peer1:8761/eureka/
