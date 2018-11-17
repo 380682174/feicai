@@ -38,6 +38,10 @@
         <module>service-zipkin-hi</module>
         <!--链路跟踪服务提供者miya-->
         <module>service-zipkin-miya</module>
+        <!--服务生产者-->
+        <module>service-lucy</module>
+        <!--断路器聚合监控-->
+        <module>service-turbine</module>
     </modules>
 
     <properties>
