@@ -1,0 +1,30 @@
+#Spring cloud有两种服务调用方式，一种是ribbon+restTemplate，另一种是feign
+
+##启动service-hi工程，它的端口为8762；将service-hi的配置文件的端口改为8763,并启动，
+##这时你会发现：service-hi在eureka-server注册了2个实例，这就相当于一个小的集群
+
+##指定服务的注册中心地址为http://localhost:8761/eureka/，程序名称为 service-ribbon，程序端口为8764
+
+#在工程的启动类中,通过@EnableDiscoveryClient向服务中心注册；
+#并且向程序的ioc注入一个bean: restTemplate;并通过@LoadBalanced注解表明这个restRemplate开启负载均衡的功能
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    name: service-ribbon
+
+server:
+  port: 8764
+
+
+
+##2222222222222
+##加入熔断器
+##首先在pox.xml文件中加入spring-cloud-starter-netflix-hystrix的起步依赖
+##在程序的启动类ServiceRibbonApplication 加@EnableHystrix注解开启Hystrix
+##改造HelloService类，在hiService方法上加上@HystrixCommand注解。该注解对该方法创建了熔断器的功能，并指定了fallbackMethod熔断方法，
+##熔断方法直接返回了一个字符串，字符串为"hi,"+name+",sorry,error!"，
