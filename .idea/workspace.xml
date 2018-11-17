@@ -107,6 +107,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -171,6 +174,7 @@
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -373,12 +377,12 @@
       <option name="presentableId" value="Default" />
       <updated>1542381693720</updated>
       <workItem from="1542381700650" duration="14199000" />
-      <workItem from="1542437554769" duration="931000" />
+      <workItem from="1542437554769" duration="1409000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15130000" />
+    <option name="totallyTimeSpent" value="15608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -399,7 +403,7 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" weight="0.3289256" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" weight="0.4033058" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.4033058" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.43729374" />
       <window_info anchor="bottom" id="Spring" order="13" weight="0.3289256" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49848714" weight="0.47438017" />
@@ -703,6 +707,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
